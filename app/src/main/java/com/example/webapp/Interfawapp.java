@@ -9,7 +9,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class Interfawapp {
     Context context;
-    WebView layout;
+    //WebView layout;
 
     Interfawapp(Context c){
         context = c;
@@ -17,8 +17,8 @@ public class Interfawapp {
 
     @JavascriptInterface
     public void showToastMessage(String message){
-        //Toast.makeText(context,message,Toast.LENGTH_LONG).show();
-        Snackbar snackbar = Snackbar.make(layout,message,Snackbar.LENGTH_SHORT);
-        snackbar.show();
+        Toast.makeText(context,message,Toast.LENGTH_LONG).show();
+        //Snackbar snackbar = Snackbar.make(layout,message,Snackbar.LENGTH_SHORT);
+        //snackbar.show();
     }
 }
